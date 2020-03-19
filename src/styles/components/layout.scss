@@ -1,0 +1,42 @@
+$sidebar-width: 250px;
+
+.layout {
+  position: relative;
+  display: flex;
+
+  .layout-sidebar {
+    position: fixed;
+    height: 100%;
+    width: $sidebar-width;
+    background: #111;
+
+    ul {
+      margin: 0;
+      padding: 10px 0;
+      color: white;
+      list-style: none;
+
+      li {
+        border-top: 1px solid #292929;
+        border-bottom: 1px solid #000;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        a {
+          display: block;
+          padding: 15px 25px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .layout-content {
+    padding: 20px;
+    margin-left: $sidebar-width;
+  }
+}
