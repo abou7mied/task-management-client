@@ -1,4 +1,5 @@
 {
+  "root": "dist/",
   "proxies": {
     "/api/": {
       "origin": "https://abou7mied-task-management.herokuapp.com/api/"
